@@ -1,0 +1,586 @@
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+:root {
+    
+}
+
+
+/* header */
+.nav-main {
+    display: flex;
+    background-attachment: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+
+
+.main-ul {
+/*     margin: 0px 0; */
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 40px;
+}
+
+.listas {
+    text-decoration: none;
+    display: flex;
+}
+
+h1 {
+    display: inline;
+    margin: 15px 0;
+}
+
+.lista-orde {
+    text-decoration: none;
+    margin: 15px;
+    color: black;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: Regular 400 Italic;
+    font-style: normal;
+} 
+
+/* main hover */
+.main-ul .lista-orde {
+    position: relative;
+}
+
+
+.main-ul .lista-orde::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #d4ac0d ;
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+}
+
+.main-ul .lista-orde:hover::before {
+    transform: scaleX(1);
+}
+
+.main-u[data-animation="top-left"] .lista-orde::before {
+    transform-origin: right;
+}
+
+.main-u[data-animation="center"] .lista-orde::before {
+    transform-origin: center;
+}
+
+/* section cuerpo */
+
+.section-cuerpo {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+
+.wrapper-div {
+    width: 60%;
+/*     padding-top: rem; */
+}
+
+.subtitulo {
+    font-size: 45px;
+    font-family: "Montserrat", sans-serif ;
+    font-weight: Regular 400 Italic;
+    font-style: normal;
+}
+
+.item-2 {
+    padding-top: 3rem;
+    width: 95%;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: Regular 300 Italic;
+    font-style: normal;
+}
+
+.botton-ofrecemos {
+    padding-top: 5rem;
+}
+
+.botton-a {
+    text-decoration: none;
+    color: black;
+    border: 1px  solid black;
+    padding: 20px 20px;
+    font-size: 24px;
+    background-color: transparent;
+    box-shadow: 0 2px 5px rgba (0, 0, 0, .2);
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: Regular 200 Italic;
+    font-style: normal;
+/*     margin: 25px 15px 30px 0; */
+    transition: .5s ease;
+/*     opacity: 0; */
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+.botton-a:hover {
+    background: #d4ac0d;
+    color: white;
+}
+
+
+.img-section {
+    width: 100%;
+    border-radius: 8px;
+    padding-left: 2px;
+}
+
+/* Sobre nosotros */
+
+.wrapper-div-1 {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    padding-top: 8rem;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.sobre-nosotros-wrapp- {
+    font-size: 23px;
+    font-family: "Montserrat" , sans-serif;
+    font-weight: Regular 200 Italic;
+    font-style: normal;
+}
+
+.linea-gris {
+    padding: 0;
+    margin: 12px;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 5px;
+}
+
+/* Parrafos sobre nosotros */
+
+.wrpper-display {
+    display: flex;
+    padding-top: 7rem;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.wrpper-grid- {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    font-size: 15px;
+    font-family: "Montserrat" , sans-serif;
+    font-weight: Regular 200  Italic;
+    font-style: normal;
+}
+
+.wrapper-parrafos {
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    font-size: 15px;
+    font-family: "Poppins" , sans-serif;
+    font-weight: Regugalr 300 Italic;
+    font-style: normal;
+    color: #000000;
+}
+
+/* Linea de separación */
+
+.wrapper-div-2 {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding-top: 7rem;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.wrapp-2-linea-separacion-2 {
+    font-size: 20px;
+    font-family: "Montserrat" , sans-serif;
+    font-weight: Regular 200 Italic;
+    font-style: normal;
+}
+
+.linea-gris- {
+    padding: 0;
+    margin: 12px;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 5px;
+}
+
+/* Impulsa tu marca */
+.wrapper-section-main-2 {
+    display: flex;
+    padding-top: 7rem;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.wrapper-displa-flex- {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.wrapper-h2 {
+    padding-top: 4rem;
+    font-size: 22px;
+    font-family: "Montserrat" , sans-serif;
+    font-weight: Regular 200 Italic;
+    font-style: normal;
+}
+
+.wrapper-img {
+    width: 30%;
+    height: 100%;
+    padding-left: 3rem;
+}
+
+/* Tarjeta de servicios */
+
+.wrrpaer-flex-{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 0px;
+
+}
+
+.wrapp-div-flex-2 {
+    width: 30%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.span-card {
+    padding-top: 1rem;
+}
+.wrapper-a-3 {
+    text-decoration: none;
+    color: black;
+    width: 500%;
+    font-size: 15px;
+    font-family: "Poppins" , sans-serif;
+    font-weight: Regular 300 Italic;
+    font-style: normal;
+}
+
+/* caja subtitulo */
+.wrapp-caja-subtitulo {
+    display: flex;
+    padding-top: 7rem;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.wrapp-nuestro-proceso- {
+    font-size: 22px;
+    font-family: "Montserrat" , sans-serif;
+    font-weight: Regular 200 Italic;
+    font-style: normal;
+}
+
+.wrapp-subtitulos {
+    font-size: 15px;
+    font-family: "Montserrat" , sans-serif;
+    font-weight: Regular 200 Italic;
+    font-style: normal;
+}
+
+/* <!-- Caja de parrafos nuestro proceso --> */
+.wrapp-proceso-1 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 0px;
+}
+
+.wrapp-proceso-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+.wrapp-proceso-3-flex {
+    display: flex;
+}
+
+.wrapp-h3-subtitulo- {
+    padding-top: 30px;
+    padding-left: 15px;
+    font-size: 20px;
+    font-family: "Montserrat" , sans-serif;
+    font-weight: Regular 200 Italic;
+    font-style: normal;
+
+}
+
+.parrafo-caja-proceso {
+    padding-top: 15px;
+    font-size: 15px;
+    font-family: "Poppins"  , sans-serif;
+    font-weight: Regular 300 Italic;
+    font-style: normal;
+    
+}
+
+/* Pregunta frecuentes */
+
+.PFQ {
+    display: flex;
+    padding-top: 7rem;
+    padding-left: 10rem;
+    padding-right: 10px;
+    max-width: 55%;
+    padding-bottom: 7rem;
+}
+
+.wrapp-titulo-PFQ- {
+    font-size: 22px;
+    font-family: "Montserrat" , sans-serif;
+    font-weight: Regular 200 Italic;
+    font-style: normal;
+}
+
+
+.subtit-pfq-{
+    font-size: 25px;
+    font-family: "Montserrat" , sans-serif;
+    font-weight: Regular 200 Italic;
+    font-style: normal;
+}
+
+.cont-pfq {
+    font-size: 20px;
+    font-family: "Poppins" , sans-serif;
+    font-weight: Regular 300 Italic;
+    font-style: normal;
+}
+
+input[type='checkbox'] {
+    display: none;
+}
+
+
+.accordion li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    line-height: 1.2;
+    padding: 20px;
+    margin-bottom: 2px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    padding-top: 2rem;
+/*     background: cornflowerblue; */
+}
+
+label::after {
+    content: '+';
+    position: absolute;
+    font-size: 32px;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+.accordion .content- {
+/*     background: darkgoldenrod; */
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+    list-style: 1.2;
+}
+
+input[type='checkbox']:checked ~ .content- {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+input[type='checkbox']:checked ~ ::after {
+    transform: rotate(135deg);
+}
+
+/* Linea de animaciones */
+
+.bg-primary {
+    border-top: 1px solid black;
+}
+
+.wrapp-animaciones- {
+    padding-top: 2rem;
+    padding-left: 10rem;
+    padding-right: 10px;
+    padding-bottom: 2rem;
+}
+
+.wrapp-div-flex- {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.item-span- {
+    margin-right: 50px;
+    line-height: 1.2;
+    font-size: 65px;
+    font-family: "Montserrat" , sans-serif;
+    font-weight: Regular  300 Italic;
+    font-style: normal;
+
+}
+
+.wrapp-i- {
+    margin-right: 20px;
+    justify-items: center;
+}
+
+.wrapp-div-flex->span {
+    animation: wrapp-div-flex- 45s linear infinite;
+}
+
+
+@keyframes wrapp-div-flex- {
+    100%{
+        transform: translate(-100%,0);
+    }
+}
+
+/* Footer */
+
+.wrapp-footer-flex {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.wrapp-footer-ordenado {
+    margin: 5px;
+}
+
+.wrap-listas {
+    display: flex;
+    margin-top: 8px;
+}
+
+.wrapp-h3- {
+    padding-left: 3.5px;
+}
+
+.wrapp-none {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-family: "Poppins" , sans-serif;
+    font-weight: Regular 300 Italic;
+    font-style: normal;
+}
+
+.wrapp-iconos {
+    color: black;
+    text-decoration: none;
+    margin: 8px;
+}
+
+/* linea barra  footer */
+
+.footer-section- {
+    display: grid;
+}
+
+.barra-footer {
+    margin-left: 5rem;
+    color: #000000;
+    width: 90%;
+    margin-top: 6.3rem;
+}
+
+.container-footer-final {
+    padding-top: 10px;
+    align-items: center;
+    display: flex;
+    padding-left: 5rem;
+    padding-right: 10px;
+    padding-bottom: 2rem;
+}
+
+.spn-barra- {
+    border-left: 1px solid black;
+    height: 1rem;
+    margin-left: 8px;
+}
+
+.final-fila-1 {
+    display: flex;
+    align-items: center;
+}
+
+.footer-text {
+    margin-left: 5px;
+    font-size: 15px;
+    font-family: "Poppins" , sans-serif;
+    font-weight: Regular 300 Italic;
+    font-style: normal;
+}
+
+.final-fila-1 {
+    font-size: 15px;
+    font-family: "Poppins" , sans-serif;
+    font-weight: Regular 300 Italic;
+    font-style: normal;
+}
+
+.footer-final-container  {
+    margin-left: 50px;
+}
+
+/* Whatsapp floating */
+.whatsapp-loating{
+    width: 8rem;
+    bottom: 7.5rem;
+    right: 7.5rem;
+}
+
+.whatsapp-loating {
+    z-index: 1;
+    position: fixed;
+}
+
+.img-whatsapp-z-index {
+    max-width: 60%;
+}
